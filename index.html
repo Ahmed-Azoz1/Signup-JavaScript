@@ -13,11 +13,48 @@
         <img src="" alt="logo">
         <form id="main-form" novalidate>
             <h2>Signup JavaScript</h2>
+
             <div class="form-control">
                 <label for="name">Name</label>
-                <input type="text" id="name">
+                <input type="text" placeholder="Enter your name" autocomplete="off" id="name">
+                <i class="icon"></i>
             </div>
+
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Enter your email" autocomplete="off" id="email">
+                <i class="icon"></i>
+            </div>
+
+            <div class="form-control">
+                <label for="phone">Phone</label>
+                <input type="tel" placeholder="Enter your phone" autocomplete="off" id="phone">
+                <i class="icon"></i>
+            </div>
+
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter your password" autocomplete="off" id="password">
+                <i class="icon"></i>
+            </div>
+
+            <div class="form-control">
+                <label for="message">Message</label>
+                <textarea placeholder="Enter your message" autocomplete="off" id="message"></textarea>
+                <i class="icon"></i>
+            </div>
+
+            <button type="submit">Submit</button>
+
         </form>
+    </div>
+
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Success!</h2>
+            <p>Your Form has been submitted successfully..</p>
+        </div>
     </div>
 
     <script src="./main.js"></script>
